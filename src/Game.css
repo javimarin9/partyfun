@@ -89,9 +89,17 @@ body {
 h1,
 h2,
 h3 {
-	color: var(--primary-color);
 	text-shadow: 2px 2px 5px var(--secondary-color);
 	margin-bottom: 10px;
+}
+
+h1,
+h3 {
+	color: var(--primary-color);
+}
+
+h2 {
+	color: var(--text-color);
 }
 
 .highlighted-text {
@@ -136,7 +144,7 @@ h3 {
 
 .btn:hover {
 	background: var(--button-hover);
-	transform: scale(1.05);
+	transform: scale(1.02);
 }
 
 .btn-group {
