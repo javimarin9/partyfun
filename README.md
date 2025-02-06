@@ -1,8 +1,9 @@
-# React + Vite
+# PartyFun by JaviMarin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PartyFun is a fun party game, built in React + Vite, where players guess words through three exciting rounds:
 
-Currently, two official plugins are available:
+1️⃣ Definition: A player describes the word without using it.
+2️⃣ One Word: Only a single word can be given as a clue.
+3️⃣ Charades: No words—only gestures and expressions!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The team that guesses the most words across all three rounds wins.
