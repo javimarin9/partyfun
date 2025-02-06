@@ -56,7 +56,6 @@ function Game() {
 		if (theme === "random") {
 			const allWords = Object.values(wordsDB).flat();
 			selectedWords = shuffleArray(allWords).slice(0, constantsDB.totalWords);
-			console.log(selectedWords);
 		} else {
 			selectedWords = shuffleArray(wordsDB[theme]).slice(
 				0,
@@ -181,8 +180,6 @@ function Game() {
 				(updatedPlayers[currentTeamAux] + 1) %
 				playerNames[currentTeamAux].length;
 
-			console.log(updatedPlayers);
-
 			return updatedPlayers;
 		});
 		// Reordenar aleatoriamente las palabras restantes para el nuevo turno
@@ -234,9 +231,6 @@ function Game() {
 		};
 	}, [gameState, timeRemaining, gameOver, isPaused, showSummaryPhase]);
 
-	setTimeout(() => {
-		console.log(timeRemaining);
-	}, 500);
 	return (
 		<div className="game-container">
 			{gameState === "start" && (
